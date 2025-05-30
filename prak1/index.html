@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gempur SR - Latihan HTML #1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        p {
+            font-size: 1.1em;
+        }
+        ul {
+            margin-top: 10px;
+        }
+        .container {
+            background: #fff;
+            padding: 24px 32px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            max-width: 600px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        .form-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .form-table tr {
+            border-bottom: 1px solid #ddd;
+        }
+        .form-table td {
+            padding: 8px;
+            vertical-align: top;
+        }
+        .form-table input[type="text"],
+        .form-table input[type="email"],
+        .form-table input[type="tel"],
+        .form-table select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-table input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-table input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gempur SR</h1>
+        <p>Selamat datang di latihan HTML pertama saya! Di sini, Seya sedang belajar dasar-dasar HTML dengan membuat halaman web sederhana.</p>
+        <p>Halaman ini dibuat untuk memenuhi tugas praktikum di STITEK Bontang</p>
+    </div>
+    <div class="container">
+        <a href="https://www.stitek.ac.id" target="_blank" title="Website STITEK Bontang">
+            <img src="https://www.stitek.ac.id/stitekv1/asset/logo/LOGO_STITEK27.png" alt="Logo STITEK Bontang" title="Logo STITEK" >
+        </a>
+        <h2>STITEK Bontang</h2>
+        <ul>
+            <li><strong>Step 1:</strong> Membuat halaman web sederhana
+            <ul>
+                <li>Penggunaan tag HTML dasar</li>
+                <li>Penggunaan tag <code>&lt;head&gt;</code> dan <code>&lt;body&gt;</code></li>
+                <li>Penggunaan tag <code>&lt;title&gt;</code></li>
+            </ul>
+            </li>
+            <li><strong>Step 2:</strong> Elemen <em>HTML Dasar</em>
+            <ul>
+                <li>Penggunaan tag <code>&lt;h1&gt;</code> hingga <code>&lt;h6&gt;</code></li>
+                <li>Penggunaan tag <code>&lt;p&gt;</code> untuk paragraf</li>
+                <li>Penggunaan tag <code>&lt;ul&gt;</code> dan <code>&lt;li&gt;</code> untuk daftar</li>
+            </ul>
+            </li>
+            <li><strong>Step 3:</strong> Menambahkan gambar dan tautan
+            <ul>
+                <li>Penggunaan tag <code>&lt;img&gt;</code> untuk menampilkan gambar</li>
+                <li>Penggunaan atribut <code>src</code> dan <code>alt</code></li>
+                <li>Penggunaan tag <code>&lt;a&gt;</code> untuk membuat tautan</li>
+            </ul>
+            </li>
+            <li><strong>Step 4:</strong> Penggunaan <span style="text-decoration: underline;">Text Formatting</span>
+            <ul>
+                <li>Penggunaan tag <code>&lt;strong&gt;</code> untuk teks tebal</li>
+                <li>Penggunaan tag <code>&lt;em&gt;</code> untuk teks miring</li>
+                <li>Penggunaan tag <code>&lt;u&gt;</code> untuk teks bergaris bawah</li>
+            </ul>
+            </li>
+            <li><strong>Step 5:</strong> Membuat Formulir Pendaftaran dan table
+            <ul>
+                <li>Penggunaan tag <code>&lt;form&gt;</code> untuk membuat formulir</li>
+                <li>Penggunaan tag <code>&lt;input&gt;</code> untuk input teks, email, dan telepon</li>
+                <li>Penggunaan tag <code>&lt;select&gt;</code> untuk dropdown pilihan</li>
+                <li>Penggunaan tag <code>&lt;table&gt;</code> untuk membuat tabel</li>
+            </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2>Form Pendaftaran STIKTEK Bontang</h2>
+        <form>
+        <table class="form-table">
+            <tr>
+                <td>Nama Lengkap:</td>
+                <td><input type="text" name="nama" placeholder="Masukkan nama lengkap"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" placeholder="Masukkan email"></td>
+            </tr>
+            <tr>
+                <td>Nomor Telepon:</td>
+                <td><input type="tel" name="telepon" placeholder="Masukkan nomor telepon"></td>
+            </tr>
+            <tr>
+                <td>Program Studi:</td>
+                <td>
+                    <select name="prodi">
+                        <option value="teknik-informatika">Teknik Informatika</option>
+                        <option value="sistem-informasi">Sistem Informasi</option>
+                        <option value="manajemen">Manajemen</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin:</td>
+                <td>
+                    <input type="radio" name="jenis_kelamin" value="laki-laki"> Laki-laki
+                    <input type="radio" name="jenis_kelamin" value="perempuan"> Perempuan
+                </td>
+            </tr>
+        </table>
+            <input type="submit" value="Daftar">
+        </form>
+</body>
+</html>
