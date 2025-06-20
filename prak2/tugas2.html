@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tugas 2 - Halaman Web Layout Kotak</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .box1, .box2, .box3 {
+            border: 2px solid black;
+            padding: 10px;
+            height: 150px;
+        }
+
+        .box1 {
+            background-color: #ff9999;
+        }
+
+        .box2 {
+            background-color: #99ff99;
+        }
+
+        .box3 {
+            background-color: #9999ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>
