@@ -1,0 +1,48 @@
+<!-- grid_css_mod.htm -->
+ <!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .grid-container-practice {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, auto);
+      gap: 15px;
+      background-color: #e0e0e0;
+      padding: 15px;
+      max-width: 800px;
+      margin: 20px auto;
+      min-height: 250px;
+    }
+    .grid-item-practice {
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 1.1em;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .item-1 { background-color: #FF5733; }
+    .item-2 { background-color: #33FF57; }
+    .item-3 { background-color: #3357FF; }
+    .item-4 { background-color: #FFC300; }
+    .item-5 { background-color: #C70039; }
+    .item-6 { background-color: #900C3F; }
+    .span-two-columns {
+      grid-column: span 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container-practice">
+    <div class="grid-item-practice item-1">Item 1</div>
+    <div class="grid-item-practice item-2">Item 2</div>
+    <div class="grid-item-practice item-3">Item 3</div>
+    <div class="grid-item-practice item-4">Item 4</div>
+    <div class="grid-item-practice item-5 span-two-columns">Item 5 (Spans 2 columns)</div>
+    <div class="grid-item-practice item-6">Item 6</div>
+  </div>
+</body>
+</html>

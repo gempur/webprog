@@ -1,0 +1,52 @@
+<!-- responsive_css_mod.htm -->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #ADD8E6;
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 10px;
+            max-width: 900px;
+            margin: 20px auto;
+        }
+
+        .grid-item {
+            background-color: #2196F3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.2em;
+            border-radius: 5px;
+        }
+    
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: #F08080;
+                font-size: 14px;
+            }
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+            .grid-item {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">Item Responsive 1</div>
+        <div class="grid-item">Item Responsive 2</div>
+        <div class="grid-item">Item Responsive 3</div>
+    </div>
+    <p style="text-align: center;">Resize your browser window to see the responsive changes!</p>
+</body>
+</html>
