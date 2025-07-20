@@ -3,9 +3,9 @@
 
 Ini adalah repositori portofolio digital saya yang berisi seluruh hasil praktikum mata kuliah Pemrograman Web. Setiap modul akan memiliki foldernya sendiri yang berisi latihan dan tugas yang telah diselesaikan.
 
-Nama = Gempur SR
-NIM = 202312082
-Dosen = Ir. ABADI NUGROHO, S.Kom., M.Kom.
+- Nama = Gempur SR
+- NIM = 202312082
+- Dosen = Ir. ABADI NUGROHO, S.Kom., M.Kom.
 
 ---
 
